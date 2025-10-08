@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loop Example</title>
+  </head>
+  <body>
+    <h1>O and X Loop</h1>
+
+    <script>
+      //PART 2A
+      for (let i = 1; i <= 10; i++) {
+        if (i % 2 === 0) {
+          document.write("X ");
+        } else {
+          document.write("O ");
+        }
+      }
+    </script>
+    <br />
+    <br />
+    <script>
+      // PART 2B
+      for (let i = 1; i <= 20; i++) {
+        document.write("O");
+        let spaces = Math.floor(Math.random() * 5) + 1;
+        for (let j = 0; j < spaces; j++) {
+          document.write("&nbsp;");
+        }
+      }
+    </script>
+
+    <script>
+      // PART 2C
+      let cityNames = ["kiruna", "uppsala", "malmo", "gothenburg", "stockholm"];
+
+      for (let i = 0; i < cityNames.length; i++) {
+        let city = cityNames[i];
+
+        for (let j = 0; j < city.length; j++) {
+          console.log(city[j]);
+        }
+      }
+    </script>
+  </body>
+</html>
+
